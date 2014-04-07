@@ -28,9 +28,9 @@ import static org.pentaho.di.job.entry.validator.JobEntryValidatorUtils.notBlank
 
 import java.util.List;
 
-import org.mozilla.javascript.Context;
-import org.mozilla.javascript.ContextFactory;
-import org.mozilla.javascript.Scriptable;
+//If we're going ot override the java version of rhino, let's try importing the whole thing
+import org.mozilla.javascript.*;
+
 import org.pentaho.di.cluster.SlaveServer;
 import org.pentaho.di.core.CheckResultInterface;
 import org.pentaho.di.core.Const;
